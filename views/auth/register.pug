@@ -8,7 +8,7 @@ block contenido
     div 
       h2.my-4.font-bold.text-xl #{pagina}
 
-      form.shadow.bg-white.py-6.px-4.max-w-md.mx-auto.my-4.text-left.rounded-md.flex.flex-col.gap-6
+      form.shadow.bg-white.py-6.px-4.max-w-md.mx-auto.my-4.text-left.rounded-md.flex.flex-col.gap-6(method="POST" action="/auth/register")
         div   
           label(class="block font-bold text-sm uppercase" for="name" ) Tu nombre
           input(id="name" name="name" class="p-2 mt-2 placeholder:text-gray-400 block w-full border-2 border-gray-200 rounded-md" placeholder="Tu Nombre")
@@ -19,8 +19,8 @@ block contenido
           label(class="block font-bold text-sm uppercase" for="password" )  Password
           input(id="password" name="password" class="p-2 mt-2 placeholder:text-gray-400 block w-full border-2 border-gray-200 rounded-md" placeholder="Tu Nombre")
         div   
-          label(class="block font-bold text-sm uppercase" for="repetir-password" ) Repetir Password
-          input(id="repetir-password" name="repetir-password" class="p-2 mt-2 placeholder:text-gray-400 block w-full border-2 border-gray-200 rounded-md" placeholder="Tu Nombre")
+          label(class="block font-bold text-sm uppercase" for="repetir_password" ) Repetir Password
+          input(id="repetir_password" name="repetir_password" class="p-2 mt-2 placeholder:text-gray-400 block w-full border-2 border-gray-200 rounded-md" placeholder="Tu Nombre")
         
         div.flex.items-center.justify-between 
           a.text-gray-400.text-sm.uppercase.font-semibold(href="/auth/login") Login 
